@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Auto-Translator (Free)",
+  "version": "1.4",
+  "description": "Unlimited free Discord translations using Lingva API",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://discord.com/*",
+    "https://lingva.ml/*",
+    "https://translate.plausibility.cloud/*",
+    "https://lingva.garudalinux.org/*",
+    "https://lingva.lunar.icu/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://discord.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

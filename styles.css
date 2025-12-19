@@ -1,0 +1,15 @@
+#discord-translator-btn {
+    background: #5865f2;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+#discord-translator-btn:hover {
+    background: #4752c4;
+}
